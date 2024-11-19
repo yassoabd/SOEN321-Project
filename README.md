@@ -13,4 +13,12 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 	3. The front-end button is linked to the JS script which takes the webpage's URL and creates an AJAX request sending that information to the back-end.
 	4. The back-end gets the requests and queries ChatGPT (make sure to use the specific GPT we were given) API. The response from GPT is then sanitized and sent back to AJAX in a JSON format.
 	5. The information is then presented cleanly to the user. 
-	This is just teasting lol. .
+	This is just testing lol. .
+
+
+###Dependencies
+Flask: Backend framework- pip install Flask Flask-CORS
+OpenAI API: For privacy policy analysis - pip install openai==0.28 python-dotenv
+Add API Key: Create .env file - touch .env
+Add the **secret key**
+Run: python app.py

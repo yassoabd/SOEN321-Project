@@ -5,7 +5,7 @@ Enhancing Privacy Rights and Consumer Protection Through AI-Driven Consent Manag
 This project aims to develop an AI-based framework to empower online consumers to make informed decisions about their data privacy. By leveraging AI to interpret complex privacy policies, the system would flag risks and help users customize their consent preferences. The project will involve fine-tuning a machine learning model (or using a suitable existing one) for privacy policy interpretation, building a prototype consent tool, and assessing its effectiveness. 
 
 
-###First Commit project structure
+### First Commit project structure
 The first commit sets up the project structure for the front-end, JS (AJAX), and back-end. Here's a small recap of how the project functions:
 
 	1. The user navigates to a webpage and wants to check it's privacy policy score.
@@ -16,7 +16,7 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 	This is just testing lol. .
 
 
-###Dependencies
+### Dependencies
 Flask: Backend framework- pip install Flask Flask-CORS
 OpenAI API: For privacy policy analysis - pip install openai==0.28 python-dotenv
 Add API Key: Create .env file - touch .env

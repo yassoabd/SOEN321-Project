@@ -17,8 +17,8 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 
 
 ### Dependencies
-1. Flask: Backend framework- pip install Flask Flask-CORS
-2. OpenAI API: For privacy policy analysis - pip install openai==0.28 python-dotenv
-3. Add API Key: Create .env file - touch .env
-4. Add the **secret key**
-5. Run: python app.py
+1. Flask: Backend framework - _pip install Flask Flask-CORS_
+2. OpenAI API: For privacy policy analysis - _pip install openai==0.28 python-dotenv_
+3. Add API Key: Create .env file - _touch .env_
+4. Add the _**secret key**_
+5. Run: _python app.py_

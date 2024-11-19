@@ -22,3 +22,4 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 3. Add API Key: Create .env file - _touch .env_
 4. Add the _**secret key**_
 5. Run: _python app.py_
+6. Access on browser: _http://127.0.0.1:5000/_

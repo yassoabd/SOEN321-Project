@@ -7,12 +7,16 @@ from dotenv import load_dotenv
 import time
 import os
 import openai
+import requests
 
 # .env file with secret key 
 load_dotenv()
 
 # Get OpenAI API key from the environment
 openai.api_key = os.getenv("bananaSecretKey")
+
+# Check if the key is loaded correctly (debugging only)
+print(f"Loaded API key: {os.getenv('bananaSecretKey')}")
 
 #Please do not share the key with anyone, thank you!! 
 
@@ -72,6 +76,37 @@ CORS(app)
 def home():
     # Render the front-end HTML file
     return render_template('index.html')
+
+@app.route('/analyze', methods=['POST'])
+def analyze():
+    """
+    Unified route to analyze a privacy policy based on user input (text or URL).
+    """
+    data = request.json
+    input_type = data.get("type")  # "text" or "url"
+    input_data = data.get("data")
+
+    if not input_type or not input_data:
+        return jsonify({"error": "Invalid input. Please specify 'type' and 'data'."}), 400
+
+    if input_type == "url":
+        try:
+            # Fetch the policy text from the URL
+            response = requests.get(input_data)
+            if response.status_code == 200:
+                policy_text = response.text
+            else:
+                return jsonify({"error": "Failed to fetch policy from the URL."}), 500
+        except Exception as e:
+            return jsonify({"error": f"Error fetching policy from URL: {str(e)}"}), 500
+    elif input_type == "text":
+        policy_text = input_data
+    else:
+        return jsonify({"error": "Invalid input type. Use 'text' or 'url'."}), 400
+
+    # Analyze the policy text
+    analysis = analyzePolicywithAI(policy_text)
+    return jsonify({"analysis": analysis})
 
 @app.route('/hello', methods=['POST'])
 def hello():

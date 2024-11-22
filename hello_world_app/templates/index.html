@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,5 +11,83 @@
     <h1>Hello World App</h1>
     <button id="helloButton">Get Message</button>
     <div id="result"></div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result-container {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy Analyzer</h1>
+
+    <!-- Input for Privacy Policy URL -->
+    <div>
+        <label for="policy-url">Enter Privacy Policy URL (optional):</label>
+        <input type="text" id="policy-url" placeholder="https://example.com/privacy-policy">
+    </div>
+
+    <!-- Input for Privacy Policy Text -->
+    <div>
+        <label for="policy-text">Or Paste Privacy Policy Text:</label>
+        <textarea id="policy-text" rows="10" placeholder="Paste privacy policy here"></textarea>
+    </div>
+
+    <!-- Analyze Button -->
+    <button id="analyze-button">Analyze</button>
+
+    <!-- Result Container -->
+    <div id="result-container"></div>
+
+    <script src="/static/scripts.js"></script>
 </body>
 </html>

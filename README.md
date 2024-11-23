@@ -4,11 +4,15 @@ Enhancing Privacy Rights and Consumer Protection Through AI-Driven Consent Manag
 ## Summary
 This project aims to develop an AI-based framework to empower online consumers to make informed decisions about their data privacy. By leveraging AI to interpret complex privacy policies, the system would flag risks and help users customize their consent preferences. The project will involve fine-tuning a machine learning model (or using a suitable existing one) for privacy policy interpretation, building a prototype consent tool, and assessing its effectiveness. 
 
-## Solution 
-Use AI to analyze and simplify privacy policies.Highlight potential risks and let users set personalized consent preferences.Build an interactive tool where users can explore these options and tailor their consent settings.
+### Solution 
+1. Use AI to analyze and simplify privacy policies.
+2. Highlight potential risks and let users set personalized consent preferences.
+3. Build an interactive tool where users can explore these options and tailor their consent settings.
 
-## Goals
-Train or adapt a machine learning model to interpret privacy policies.Develop a web-based tool using Python and Flask.Provide visual feedback and customization options to users.
+### Goals
+1. Train or adapt a machine learning model to interpret privacy policies.
+2. Develop a web-based tool using Python and Flask.
+3. Provide visual feedback and customization options to users.
 
 ### First Commit Project Structure
 The first commit sets up the project structure for the front-end, JS (AJAX), and back-end. Here's a small recap of how the project functions:

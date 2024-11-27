@@ -53,7 +53,7 @@ def analyzePolicywithAI(policy_text):
                         "You are a privacy and consent management assistant. "
                         "Your job is to help users understand how their data is being used, highlight any potential privacy risks, "
                         "and offer suggestions on how they can adjust their consent preferences to protect their data. "
-                        "Provide your responses in clear and concise bullet points, including recommendations where relevant."
+                        "Provide your responses in clear and concise bullet points, including recommendations where relevant. Also, dont make it too long so it fits within the limits of character of a js alert pop up without loosing too much descriptions!"
                     )
                 },
                 {

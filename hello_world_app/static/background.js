@@ -6,13 +6,13 @@ chrome.action.onClicked.addListener((tab) => {
   });
   
   function extractAndAnalyzePolicy() {
-    const policyText = document.body.innerText; // Extract the entire page's text
+    const policyText = document.body.innerText; 
     if (!policyText) {
       alert("Could not extract text from the page.");
       return;
     }
     console.log("I have extracted the text from the page");
-    fetch('http://127.0.0.1:5000/analyze', { // Replace with your backend URL if deployed
+    fetch('http://127.0.0.1:5000/analyze', { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ policyText: policyText })

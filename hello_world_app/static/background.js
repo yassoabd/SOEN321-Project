@@ -11,7 +11,7 @@ chrome.action.onClicked.addListener((tab) => {
       alert("Could not extract text from the page.");
       return;
     }
-  
+    console.log("I have extracted the text from the page");
     fetch('http://127.0.0.1:5000/analyze', { // Replace with your backend URL if deployed
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -19,9 +19,14 @@ chrome.action.onClicked.addListener((tab) => {
     })
       .then(response => response.json())
       .then(data => {
+        console.log("Fetch sent");
         if (data.summary) {
           alert(`Analysis Summary:\n${data.summary}`);
-        } else {
+          console.log("Fetch Summary - OK");
+        } else if (data && data.error) {
+          console.error('Error:', data.error);
+          alert(`Error: ${data.error}`);
+      } else {
           console.error('Error:', data.error || 'Unknown error occurred.');
           alert('Failed to analyze the policy.');
         }

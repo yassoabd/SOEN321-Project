@@ -8,6 +8,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Analyze Privacy Policy"
+    "default_title": "Analyze Privacy Policy",
+    "default_icon": "logo.png"
   }
 }

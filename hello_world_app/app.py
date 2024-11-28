@@ -112,8 +112,8 @@ def hello():
 def analyze():
     page_data = request.json
     policy_text = page_data.get('policyText', '')
-    # print("Incoming data:", page_data)
-    # print(f"Policy text received ({len(policy_text)} characters).")
+    print("Incoming data:", page_data)
+    print(f"Policy text received ({len(policy_text)} characters).")
     if not policy_text:
         # If no text extracted, then return error
         return jsonify({"error": "No policy Text"}), 400

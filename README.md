@@ -18,12 +18,10 @@ This project aims to develop an AI-based framework to empower online consumers t
 The first commit sets up the project structure for the front-end, JS (AJAX), and back-end. Here's a small recap of how the project functions:
 
 	1. The user navigates to a webpage and wants to check it's privacy policy score.
-	2. The user opens the pop-up (Chrome extension) and clicks on the "Analyze" button.
+	2. The user clicks the pop-up (Chrome extension) and which will then start the "Analysis" process.
 	3. The front-end button is linked to the JS script which takes the webpage's URL and creates an AJAX request sending that information to the back-end.
 	4. The back-end gets the requests and queries ChatGPT (make sure to use the specific GPT we were given) API. The response from GPT is then sanitized and sent back to AJAX in a JSON format.
 	5. The information is then presented cleanly to the user. 
-	This is just testing lol. .
-
 
 ### Dependencies
 1. Flask: Backend framework - _pip install Flask Flask-CORS_
@@ -34,3 +32,11 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 6. Add the _**secret key**_
 7. Run: _python app.py_
 8. Access on browser: _http://127.0.0.1:5000/_
+
+### Chrome Extension
+1. Go to chrome://extensions/
+2. Enable Developer mode
+3. Load unpacked project folder > static
+4. Click Update
+5. Add Extension to task bar
+

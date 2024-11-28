@@ -1,14 +1,14 @@
 {
-    "manifest_version": 3,
-    "name": "Privacy Policy Analyzer",
-    "version": "1.0",
-    "permissions": ["activeTab", "scripting"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_title": "Analyze Privacy Policy"
-    }
+  "manifest_version": 3,
+  "name": "Privacy Policy Analyzer",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Analyze Privacy Policy",
+    "default_icon": "logo.png"
   }
-  
-  
+}

@@ -27,11 +27,10 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 1. Flask: Backend framework - _pip install Flask Flask-CORS_
 2. OpenAI API: For privacy policy analysis - _pip install openai==0.28 python-dotenv_
 3. Summarize extract Text - _pip install sumy_ , _pip install nltk_
-4. **New**:- Python package used for making HTTP requests- _pip install requests_
+4. Python package used for making HTTP requests- _pip install requests_
 5. Add API Key: Create .env file - _touch .env_
 6. Add the _**secret key**_
 7. Run: _python app.py_
-8. Access on browser: _http://127.0.0.1:5000/_
 
 ### Chrome Extension
 1. Go to chrome://extensions/
@@ -40,3 +39,4 @@ The first commit sets up the project structure for the front-end, JS (AJAX), and
 4. Click Update
 5. Add Extension to task bar
 
+**Once all dependencies are installed and the extension is set up, you can begin analyzing privacy policies by clicking the extension icon and then "Analyze TOS".**
